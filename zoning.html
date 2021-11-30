@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Mes zonings en HTML / CSS'>
+    <meta name='author' content='Christopher Picot'>
+    <meta name='keywords' content=''>
+    <title>Ma page zoning</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=M+PLUS+1+Code:wght@500&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=M+PLUS+1+Code:wght@500&family=Montserrat:wght@200&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=M+PLUS+1+Code:wght@500&family=Montserrat:wght@200&display=swap"
+        rel="stylesheet">
+
+    <!-- CDN de font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="#logo">
+                <button type="button">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </button>
+            </a>
+            <img src="img/logo.png" alt="css 3, html 5">
+
+        </div>
+
+        <div id="slogan">
+            <h1>Mon premier site HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="https//www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https//www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <nav>
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Textes</a>
+            <a href="selecteur.html">Selecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="zoning.html" class="activ">Zoning</a>
+            <a href="listes.html">Listes</a>
+            <a href="lien_menu.html">Liens & menus</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedias</a>
+            <a href="animation.html">Animations</a>
+        </div>
+    </nav>
+
+    <main>
+        <!------------------------- ZONING 1--------------------------->
+        <h2>Zoning</h2>
+
+        <section>
+            <h3>Zoning 1</h3>
+
+            <div id="zoning1">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+
+                <aside>
+                    Zone de gauche
+                </aside>
+
+                <section>
+                    Zone de droite
+                </section>
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 2</h3>
+
+            <div id="zoning2">
+                <header>
+                    <p>Zone du haut <br> HEADER</p>
+                </header>
+
+                <aside>
+                    <p>Zone de gauche <br>ASIDE</p>
+                </aside>
+
+                <section class="middle">
+                    <p>Zone du milieu <br> MIDDLE</p>
+                </section>
+
+                <aside>
+                    <p>Zone de droite <br>ASIDE</p>
+                </aside>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 3</h3>
+
+            <div id="zoning3">
+                <aside>
+                    <p>Gauche <br> SECTION</p>
+                </aside>
+
+                <section>
+                    <p>Droite <br> SECTION</p>
+                </section>
+                <div class="clear"></div>
+                <footer>
+                    <p>Bas <br> FOOTER</p>
+                </footer>
+
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 4</h3>
+
+            <div id="zoning4">
+                <header>
+                    <p>HEADER</p>
+                </header>
+                <nav>
+                    <p>NAV</p>
+                </nav>
+                <section>
+                    <p>SECTION</p>
+                </section>
+                <footer>
+                    <p>FOOTER</p>
+                </footer>
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 5</h3>
+            <div id="zoning5">
+                <header>
+                    <p>HEADER</p>
+
+                </header>
+                <nav>
+                    <p>NAV</p>
+                </nav>
+                <section>
+                    <div class="zone1">Zone 1</div>
+                    <div class="zone2">Zone 2</div>
+                    <div class="clear"></div>
+
+                    <div class="zone3">Zone 3</div>
+                    <div class="zone4">Zone 4</div>
+                    <div class="clear"></div>
+                </section>
+                <footer>
+                    <p>FOOTER</p>
+                </footer>
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 6</h3>
+            <div id="zoning6">
+                <header>
+                    <div class="haut1">haut 1</div>
+                    <div class="haut2">haut 2</div>
+                    <div class="haut3">haut 3</div>
+                </header>
+                <nav>
+                    <p>Menu</p>
+                </nav>
+                <section>
+                    <div class="zoneGauche">
+                        Zone de gauche
+                    </div>
+                    <div class="zoneDroite">
+                        <div class="carreG">A</div>
+                        <div class="carreG">B</div>
+
+                        <div class="rect">SlideShow</div>
+                        <div class="carreP">C</div>
+                        <div class="carreP">D</div>
+                        <div class="carreP">E</div>
+                        <div class="carreP">F</div>
+                    </div>
+                </section>
+
+                <footer>
+                    <p>Bas</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Liens administratifs, mentions légales, plan du site, cgu et cgv, contact, copyright-->
+        <small>&copy; 2021 Le poleS</small>
+    </footer>
+</body>
+
+</html>

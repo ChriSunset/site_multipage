@@ -5,10 +5,10 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name='description' content=''>
+    <meta name='description' content='Mes tableaux en HTML / CSS'>
     <meta name='author' content='Christopher Picot'>
-    <meta name='keywords' content=', , , , mot1, mot2, serie de mots'>
-    <title>Ma page structure</title>
+    <meta name='keywords' content=''>
+    <title>Ma page tableau</title>
     <link rel='stylesheet' href='css/style.css'>
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,12 +65,12 @@
 
     <nav>
         <div class="ancreNav">
-            <a href="index.html" class="activ">Structure</a>
+            <a href="index.html">Structure</a>
             <a href="texte.html">Textes</a>
             <a href="selecteur.html">Selecteurs</a>
             <a href="image.html">Images</a>
-            <a href="position.html">Positions</a>
-            <a href="tableau.html">Tableaux</a>
+            <a href="position.html" >Positions</a>
+            <a href="tableau.html" class="activ">Tableaux</a>
             <a href="zoning.html">Zoning</a>
             <a href="listes.html">Listes</a>
             <a href="lien_menu.html">Liens & menus</a>
@@ -81,24 +81,55 @@
     </nav>
 
     <main>
-        <!-- main contenu principal, exclusif à cette page -->
-        <aside>
-            <!-- contenu secondaire -->
-        </aside>
+        <h2>Tableau</h2>
 
-        <section>
-            <!-- titres, textes, regroupé par thématiques-->
-            <div>
-                <!-- Zone de contenu supplémentaire, type block-->
-            </div>
+        <section class="tableau">
+            <table>
+                <caption>
+                    <i class="fas fa-plane-departure"></i>Vols Paris - Rome
+                </caption>
 
-            <span>
-                <!-- Zone de contenu supplémentaire, type inline-->
-            </span>
-
-            <article>
-                <!-- Encore du contenu-->
-            </article>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <td>02/08/2021</td>
+                        <td>11/08/2021</td>
+                        <td>22/09/2021</td>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <td>02/08/2021</td>
+                        <td>11/08/2021</td>
+                        <td>22/09/2021</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">Air France</th>
+                        <td>Départ 10h - Arrivée 13h</td>
+                        <td>Départ 15h - Arrivée 18h</td>
+                        <td>Départ 17h - Arrivée 20h</td>
+                    </tr>
+                    <tr>
+                        <td>200€</td>
+                        <td>180€</td>
+                        <td>170€</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Alitalia</th>
+                        <td>Départ 6h - Arrivée 9h</td>
+                        <td>Départ 13h - Arrivée 16h</td>
+                        <td>Départ 21h - Arrivée 00h</td>
+                    </tr>
+                    <tr>
+                        <td>120€</td>
+                        <td>250€</td>
+                        <td>100€</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
