@@ -618,11 +618,6 @@ button{
     background-color: rgb(7, 63, 37);
 }
 
-#zoning6 nav{
-    margin: 0;
-    padding: 0;
-}
-
 #zoning6 section{
     margin: 0;
     padding: 0;
@@ -630,45 +625,36 @@ button{
 }
 
 #zoning6 .zoneGauche{
+    float:left;
     width: 20%;
     height: 100%;
     background-color: rgb(57, 102, 88);
 }
 
 #zoning6 .zoneDroite{
+    float:left;
     width: 80%;
     height: 100%;
-    margin-left: 180px;
-    margin-top: -800px;
 }
 
 #zoning6 .carreG{
-    /*float: left;*/
-    display:flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
+    float: left;
+    text-align:center;
     width: 50%;
     height: 40%; 
 }
 
 #zoning6 .rect{
-    /*float: left;*/
-    display:flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
+    float: left;
+    text-align:center;
     width: 100%;
     height: 40%;
     background-color: rgb(23, 65, 105);
 }
 
 #zoning6 .carreP{
-    /*float: left;*/
-    display:flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
+    float: left;
+    text-align:center;
     width: 25%;
     height: 20%;
 }
@@ -679,4 +665,193 @@ button{
 
 #zoning6 .carreG:nth-of-type(2n),#zoning6 .carreP{
     background-color: rgb(6, 6, 78);
+}
+
+/******** Correction zoning 6*******/
+
+/*
+#zoning6{
+    background-color: #ffd6d6;
+    color:white;
+    width: 900px;
+    text-align: center;
+    margin:0 auto
+}
+
+#zoning6 header{
+    background-color: #40a497;
+    height:180px;
+
+    #zoning6 .haut1,#zoning6 .haut3{
+    float: left;
+    width: 25%;
+    height: 200px;
+    background-color: rgb(6, 6, 78);
+}
+
+#zoning6 .haut2{
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(43, 43, 165);
+}
+
+*/
+
+/******************** FIN ZONING **********************/
+
+/******************** DEBUT PAGE LISTE **********************/
+ul.fruit{
+    list-style-type: none;
+}
+
+ul.fruit li{
+    display:inline;
+    margin: 15px;
+}
+
+li .far{
+    font-size:90%;
+    color:blue;
+}
+
+li .far:hover{
+    font-size:120%;
+    color:darkred;
+}
+
+.imbriquee,.imbriquee ul{
+    padding-left: 15px;
+}
+
+.imbriquee{
+    cursor: pointer;
+}
+
+.imbriquee ul{
+    display: none;
+}
+
+.europe:hover ul, asie:hover ul{
+    display: block;
+}
+
+.imbriquee li ul li:hover{
+font-size: 200%;
+background-color: red;
+display:inline;
+box-shadow: 5px 10px 10px grey;
+transition-duration: 1s;
+}
+/******************** FIN PAGE LISTE **********************/
+
+/******************** DEBUT PAGE LIENS ET MENUS **********************/
+
+/************ LIENS ************/
+.ancre{
+    text-align: center;
+}
+
+.ancre a{
+    margin: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #2c3e50;
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0px 0px 10 px 3px black;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.ancre:hover{
+    box-shadow: none;
+    transition-duration: .5s;
+    text-shadow: 1px 5px 10px grey;
+}
+
+#lien a{
+    text-decoration: none;
+    color:#2980b9;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#lien a:hover{
+    color:#f16529;
+}
+
+/************ MENUS ************/
+#menu nav{
+    background-color: transparent;
+    border:none;
+}
+
+#menu ul{
+    list-style:none;
+    text-align:center;
+}
+
+#menu ul li{
+    display:inline-block;
+}
+
+#menu nav a{
+    padding:10px;
+    color:grey;
+    text-decoration: none;
+    background-color: #ddd;
+    transition: 1s ease-in;
+}
+
+#menu nav a:hover{
+    color:#fff;
+    background-color: #069;
+}
+
+/************ MENUS DEROULANTS ************/
+#menuDeroulant{
+    height:650px;
+}
+
+#menuDeroulant nav{
+    background-color: transparent;
+    border:none;
+    width:90%;
+    margin: 0 auto;
+}
+
+#menuDeroulant nav ul li{
+    float:left;
+    list-style-type: none;
+    width:20%;
+}
+
+#menuDeroulant ul ul{
+    display:none;
+}
+
+#menuDeroulant ul li ul li{
+    border-top:1px solid #46df7e;
+    width:100%;
+}
+
+#menuDeroulant nav li{
+    background-color: #ccc;
+}
+
+#menuDeroulant nav li a{
+    text-decoration:none ;
+    color:#000;
+    padding: 4px 0 4px;
+    display: block;
+}
+
+#menuDeroulant ul{
+    text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2{
+   display:block;
+   color:red;
 }
