@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Mes images en HTML / CSS'>
+    <meta name='author' content='Christopher Picot'>
+    <meta name='keywords' content=''>
+    <title>Ma page Animation</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=M+PLUS+1+Code:wght@500&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=M+PLUS+1+Code:wght@500&family=Montserrat:wght@200&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=M+PLUS+1+Code:wght@500&family=Montserrat:wght@200&display=swap"
+        rel="stylesheet">
+
+    <!-- CDN de font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="#logo">
+                <button type="button">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </button>
+            </a>
+            <img src="img/logo.png" alt="css 3, html 5">
+
+        </div>
+
+        <div id="slogan">
+            <h1>Mon premier site HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="https//www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https//www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <nav>
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="texte.html">Textes</a>
+            <a href="selecteur.html">Selecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="listes.html">Listes</a>
+            <a href="lien_menu.html">Liens & menus</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedias</a>
+            <a href="animation.html" class="activ">Animations</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Animations</h2>
+
+        <section>
+            <h3>Infobulle</h3>
+            <div class="infoBulle">
+                <p><a href="#">Passez la souris<span>Salut, je suis un pop_up</span></a></p>
+                <p><a href="#">Ici aussi !<span>Un autre pop up !</span></a></p>
+                <p><a href="#">Une fois encore !<span>C'est bon la dernière !</span></a></p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Effets au survol avec transitions et filtres CSS</h3>
+
+            <ul class="imgEffets">
+                <li><img src="img/survol_img1.jpg" alt=""></li>
+                <li><img src="img/survol_img2.jpg" alt=""></li>
+                <li><img src="img/survol_img3.jpg" alt=""></li>
+                <li><img src="img/survol_img4.jpg" alt=""></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Rotation d'un menu en CSS3</h3>
+
+            <div id="menuRotate">
+                <dl class="menu">
+                    <dt class="btnRot">Partager</dt>
+                    <dd><a href="#">...</a></dd>
+                    <dd><a href="#">Delicious</a></dd>
+                    <dd><a href="#">Facebook</a></dd>
+                    <dd><a href="#">Twitter</a></dd>
+                </dl>
+
+                <div class="masque"></div>
+                <div class="ombre"></div>
+            </div>
+        </section>
+
+        <div class="clear"></div>
+    </main>
+
+    <footer>
+        <!-- Liens administratifs, mentions légales, plan du site, cgu et cgv, contact, copyright-->
+        <small>&copy; 2021 Le poleS</small>
+    </footer>
+</body>
+
+</html>
